@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27701.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyPool.WebAPI", "ProxyPool.WebAPI\ProxyPool.WebAPI.csproj", "{8D418374-E4AF-4285-8735-852627642873}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D418374-E4AF-4285-8735-852627642873}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D418374-E4AF-4285-8735-852627642873}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D418374-E4AF-4285-8735-852627642873}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D418374-E4AF-4285-8735-852627642873}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C6F418C5-9170-4E76-88D7-DF44601C4248}
+	EndGlobalSection
+EndGlobal
