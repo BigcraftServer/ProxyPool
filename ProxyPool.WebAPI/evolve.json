@@ -1,0 +1,6 @@
+﻿{
+  "Evolve.ConnectionString": "Server=x.acme.com;Database=ProxyDB;Port=8432;UserId=postgres;Password=********;",
+  "Evolve.Driver": "Npgsql",
+  "Evolve.Locations": "Scripts/PostgrSQL",
+  "Evolve.Command": "migrate"
+}
