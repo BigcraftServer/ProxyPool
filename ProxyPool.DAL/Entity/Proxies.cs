@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProxyPool.DAL.Enum;
+using System;
 using System.Collections.Generic;
 using System.Net;
 
@@ -7,7 +8,7 @@ namespace ProxyPool.DAL.Entity {
     public Guid Id { get; set; }
     public IPAddress IpAddress { get; set; }
     public int Port { get; set; }
-    public string Type { get; set; }
+    public ProxyType Type { get; set; }
     public string AnonymousType { get; set; }
     public string CountryCode { get; set; }
     public DateTime CreateTime { get; set; }

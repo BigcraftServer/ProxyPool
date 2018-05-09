@@ -11,6 +11,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using ProxyPool.BLL;
+using ProxyPool.BLL.Services;
 using ProxyPool.DAL;
 using Swashbuckle.AspNetCore.Swagger;
 
@@ -37,6 +39,7 @@ namespace ProxyPool.WebAPI {
       });
       #endregion
       services.AddEntityFrameworkNpgsql().AddDbContext<ProxyDBContext>(options => options.UseNpgsql(Configuration.GetConnectionString("ProxyDB")));
+      services.AddScoped<ProxyService>();
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

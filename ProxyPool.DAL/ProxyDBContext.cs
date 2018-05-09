@@ -3,6 +3,7 @@ using JetBrains.Annotations;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using ProxyPool.DAL.Entity;
+using ProxyPool.DAL.Enum;
 
 namespace ProxyPool.DAL {
   public partial class ProxyDBContext : DbContext {
@@ -51,8 +52,7 @@ namespace ProxyPool.DAL {
 
         entity.Property(e => e.Type)
             .IsRequired()
-            .HasColumnName("type")
-            .HasColumnType("character varying(20)");
+            .HasColumnName("type").HasConversion(EnumConverter<ProxyType>.Instance);
 
         entity.HasOne(d => d.CountryCodeNavigation)
             .WithMany(p => p.Proxies)

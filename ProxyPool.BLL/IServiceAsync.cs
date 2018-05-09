@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace ProxyPool.BLL {
   public interface IServiceAsync<T, Q> where T : class, new() {
-    T Get(Q query);
-    IList<T> GetList(Q query);
-    bool Delete(Q query);
-    T Create(T t);
+    Task<T> GetAsync(Q query);
+    Task<IList<T>> GetListAsync(Q query);
+    Task<bool> DeleteAsync(Q query);
+    Task<T> CreateAsync(T t);
   }
 }
