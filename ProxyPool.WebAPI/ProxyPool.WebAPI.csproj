@@ -11,11 +11,13 @@
   <ItemGroup>
     <PackageReference Include="Evolve" Version="1.8.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" Version="2.1.0-preview2-final" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.0-preview2-final" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.1.0-preview2" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="2.4.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ProxyPool.BLL\ProxyPool.BLL.csproj" />
     <ProjectReference Include="..\ProxyPool.DAL\ProxyPool.DAL.csproj" />
   </ItemGroup>
 
