@@ -51,7 +51,6 @@ namespace ProxyPool.DAL {
         entity.Property(e => e.Port).HasColumnName("port");
 
         entity.Property(e => e.Type)
-            .IsRequired()
             .HasColumnName("type").HasConversion(EnumConverter<ProxyType>.Instance);
 
         entity.HasOne(d => d.CountryCodeNavigation)

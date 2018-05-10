@@ -34,7 +34,8 @@ namespace ProxyPool.BLL {
     }
 
     public async Task<T> GetAsync(Q query) {
-      return proxyDBContext.Proxies.FirstOrDefault() as T;
+      var a =  proxyDBContext.Proxies.FirstOrDefault();
+      return a as T;
     }
 
     public IList<T> GetList(Q query) {
