@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProxyPool.WebAPI", "ProxyPo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProxyPool.DAL", "ProxyPool.DAL\ProxyPool.DAL.csproj", "{35DDE0CB-AA1D-4696-B222-EC0EAB09EA09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyPool.BLL", "ProxyPool.BLL\ProxyPool.BLL.csproj", "{2C3A6095-E874-437E-A547-590EC4F3CF2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProxyPool.BLL", "ProxyPool.BLL\ProxyPool.BLL.csproj", "{2C3A6095-E874-437E-A547-590EC4F3CF2C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
