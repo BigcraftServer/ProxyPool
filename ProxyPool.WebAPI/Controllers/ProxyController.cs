@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using ProxyPool.BLL.InputModel;
 using ProxyPool.BLL.Services;
+using ProxyPool.DAL.Entity;
 
 namespace ProxyPool.WebAPI.Controllers {
   [Route("api/[controller]")]
@@ -16,18 +18,19 @@ namespace ProxyPool.WebAPI.Controllers {
     }
 
     /// <summary>
-    /// 获取Proxy列表
+    /// 获取Proxy
     /// </summary>
     /// <returns></returns>
     [HttpGet("proxies")]
-    public async Task<OkObjectResult> Get() {
-      try {
-        var a = await proxyService.GetAsync(null);
-        return Ok(a);
-      } catch (Exception e) {
+    [ProducesResponseType(typeof(DAL.Entity.Proxy), 200)]
+    public IActionResult Get(Guid id) {
+      return Ok(proxyService.Get(id));
+    }
 
-      }
-      return Ok(null);
+    [HttpPost("")]
+    [ProducesResponseType(typeof(DAL.Entity.Proxy), 200)]
+    public IActionResult Create(ProxyInput proxyInput) {
+      return Ok(proxyService.Create(proxyInput));
     }
   }
 }

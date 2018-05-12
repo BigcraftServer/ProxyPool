@@ -31,11 +31,4 @@
     <ProjectReference Include="..\ProxyPool.BLL\ProxyPool.BLL.csproj" />
     <ProjectReference Include="..\ProxyPool.DAL\ProxyPool.DAL.csproj" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="Npgsql.EntityFrameworkCore.PostgreSQL">
-      <HintPath>..\..\..\..\Desktop\Npgsql.EntityFrameworkCore.PostgreSQL\src\EFCore.PG\bin\Release\netstandard2.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
 </Project>
