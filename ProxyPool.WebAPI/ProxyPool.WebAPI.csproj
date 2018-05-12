@@ -30,5 +30,6 @@
   <ItemGroup>
     <ProjectReference Include="..\ProxyPool.BLL\ProxyPool.BLL.csproj" />
     <ProjectReference Include="..\ProxyPool.DAL\ProxyPool.DAL.csproj" />
+    <ProjectReference Include="..\ProxyPool.Grpc\ProxyPool.Grpc.csproj" />
   </ItemGroup>
 </Project>
