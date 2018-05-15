@@ -40,7 +40,7 @@ namespace ProxyPool.WebAPI {
       });
       #endregion
       services.AddEntityFrameworkNpgsql().AddDbContext<ProxyDBContext>(options => options.UseNpgsql(Configuration.GetConnectionString("ProxyDB")));
-      services.AddScoped<ProxyService>();
+      services.AddTransient<ProxyService>();
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

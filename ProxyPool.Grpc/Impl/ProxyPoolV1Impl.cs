@@ -7,11 +7,11 @@ using ProxyPool.BLL.Services;
 using ProxyPool.BLL.ViewModel;
 using ProxyPool.Grpc;
 
-namespace ProxyPool.WebAPI.Grpc {
-  public class ProxyPoolGrpc : ProxyPoolV1.ProxyPoolV1Base {
+namespace ProxyPool.Grpc.Impl {
+  public class ProxyPoolV1Impl : ProxyPoolV1.ProxyPoolV1Base {
     private ProxyService proxyService;
 
-    public ProxyPoolGrpc(ProxyService proxyService) {
+    public ProxyPoolV1Impl(ProxyService proxyService) {
       this.proxyService = proxyService ?? throw new ArgumentNullException(nameof(proxyService));
     }
 
